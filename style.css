@@ -1,8 +1,50 @@
-html, body {
+body {
   margin: 0;
   padding: 0;
+  background-color: #000;
+  font-family: sans-serif;
+  color: #fff;
 }
 
-canvas {
-  display: block;
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+
+.text-panel {
+  width: 30%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.canvas-card {
+  width: 60%;              
+  max-width: 900px;        
+  height: 100%;
+  margin-right: 30px;
+  margin-left: 30px;
+  background-color: black;
+  border: 2px solid white;
+  overflow-y: auto;        /* scroll verticale */
+  box-sizing: border-box;
+  position: relative; 
+}
+
+
+/* Font pers*/
+h1{
+  font-family: doto;
+
+}
+
+body{
+  font-family: pixelify sans;
+  font-size: large;
 }

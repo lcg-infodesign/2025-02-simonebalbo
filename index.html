@@ -1,18 +1,56 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment_02_Balbo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Font pers -->
+  <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Doto&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 
-    <title>Sketch</title>
+</head>
+<body>
+  <div class="container">
+    <div class="text-panel">
+      <h1>Costellazioni di Dati</h1>
+      <p></p>
+      <p>Le seguenti rappresentazioni si basano su un fattore per colonna: </p>
+      <p>1) Dimensione dell'esagono, proporzionale al valore di Column_0 
+                  [se Column_0 < x disegna un puntino] </p>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+      <p>2) Lunghezza della prima linea, dipendente da Column_1</p>
+      <p>3) Inclinazione della prima linea, dipendente da Column_2 </p>
+      <p>4) Verso della seconda linea: antiorario se Column_3 <0 e viceversa </p>
+      <p>5) Asse di specularità: asse x se Column_4 <0 e viceversa </p>
+    </div>
+    <div class="canvas-card" id="canvas-container">
+    </div>
+  </div>
 
-    <script src="libraries/p5.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script>
-  </head>
-
-  <body>
-    <script src="sketch.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js"></script>
+  <script src="p5.min.js"></script>
+  <script src="script.js"></script>
+  <script src="sketch.js"></script>
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
